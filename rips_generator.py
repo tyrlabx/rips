@@ -17,7 +17,7 @@ if uploaded_file is not None:
     try: 
         temp = pd.read_excel(bytes_data, sheet_name=None)
     except Exception as e:
-        st.exception('El archivo cargado no es valido, contacta al administrador.')
+        st.exception(f'El archivo cargado no es valido, contacta al administrador.{e}')
     usuarios = [temp.get('usuarios').to_dict()]
     consultas = temp.get('consultas')
     procedimientos = temp.get('procedimientos')
