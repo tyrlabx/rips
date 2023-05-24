@@ -4,7 +4,7 @@ import streamlit as st
 
 #{'numDocumentoldObligado': '814006170', 'numFactura': 'CTFE226713', 'tipoNota': None, 'numNota': None, 'usuarios': [{'tipoDocumentoldentificacion': 'CC', 'numDocumentoldentificacion': '52100200', 'tipoUsuario': '01', 'fechaNacimiento': '2000-01-01', 'codSexo': 'M', 'codPaisResidencia': '170', 'codMunicipioResidencia': '05134', 'codZonaTerritorialResidencia': '01', 'incapacidad': '02', 'consecutivo': 1, 'codPaisOrigen': '170', 'servicios': {'consultas': [{'codPrestador': '500000000001', 'fechalnicioAtencion': '2021-08-18 08:10', 'numAutorizacion': '100000000002', 'codConsulta': '890201', 'modalidadGrupoServicioTecSal': '09', 'grupoServicios': '01', 'codServicio': 1, 'finalidadTecnologiaSalud': '11', 'causaMotivoAtencion': '21', 'codDiagnosticoPrincipal': 'D482', 'codDiagnosticoRelacionado1': 13428, 'codDiagnosticoRelacionado2': None, 'codDiagnosticoRelacionado3': None, 'tipoDiagnosticoPrincipal': '01', 'tipoDocumentoldentificacion': 'CC', 'numDocumentoldentificacion': '80100200', 'vrServicio': 36341, 'tipoPagoModerador': '01', 'valorPagoModerador': 8000, 'numFEVPagoModerador': 'AF0987232XX', 'consecutivo': 1}]}}]}
 
-st.title(":medical_symbol: Generar nuevos RIPS :medical_symbol:")
+st.title(":medical_symbol: Generar nuevos RIPS")
 st.subheader(":one: Por favor, descargar la plantilla")
 with open('plantilla_RIPS.xlsx', 'rb') as f:
    st.download_button('Descargar plantilla', f, file_name='plantilla_RIPS.xlsx')  # Defaults to 'application/octet-stream'
